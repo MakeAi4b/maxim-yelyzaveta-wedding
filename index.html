@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Максим & Єлизавета · 6 вересня 2026</title>
+<meta name="description" content="Запрошення на весілля Максима та Єлизавети — 6 вересня 2026, ресторан «Губернія». Програма дня, локація, дрес-код та підтвердження присутності." />
+<meta property="og:title" content="Максим & Єлизавета · Весілля 6.09.2026" />
+<meta property="og:description" content="Ми будемо щасливі розділити цей день із вами. Ресторан «Губернія»." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- scroll progress -->
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- ambient petals canvas -->
+<canvas id="petals" class="petals-canvas" aria-hidden="true"></canvas>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#home" class="nav__brand" aria-label="На початок">М&nbsp;<span>&amp;</span>&nbsp;Є</a>
+  <nav class="nav__links" aria-label="Навігація">
+    <a href="#story">Історія</a>
+    <a href="#location">Локація</a>
+    <a href="#program">Програма</a>
+    <a href="#dresscode">Дрес-код</a>
+    <a href="#gallery">Галерея</a>
+    <a href="#rsvp" class="nav__cta">Підтвердити</a>
+  </nav>
+  <button class="nav__burger" id="burger" aria-label="Меню" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- petals toggle -->
+<button class="petal-toggle" id="petalToggle" title="Пелюстки" aria-label="Увімкнути або вимкнути пелюстки">❀</button>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <canvas id="embers" class="embers" aria-hidden="true"></canvas>
+  <div class="hero__media" style="background-image:url('assets/img/hero.jpg')"></div>
+  <div class="hero__veil"></div>
+  <div class="hero__inner reveal">
+    <p class="hero__eyebrow" id="greeting">Раді запросити вас на наше весілля</p>
+    <div class="hero__monogram">Максим <span>&amp;</span> Єлизавета</div>
+    <p class="hero__sub">Максим &nbsp;·&nbsp; Єлизавета</p>
+    <div class="hero__rule"><span></span>6 ВЕРЕСНЯ 2026 · НЕДІЛЯ<span></span></div>
+    <p class="hero__place">Ресторан «Губернія»</p>
+
+    <!-- countdown -->
+    <div class="countdown" id="countdown" aria-label="Зворотний відлік">
+      <div class="cd"><b data-cd="days">—</b><i>днів</i></div>
+      <div class="cd"><b data-cd="hours">—</b><i>годин</i></div>
+      <div class="cd"><b data-cd="mins">—</b><i>хвилин</i></div>
+      <div class="cd"><b data-cd="secs">—</b><i>секунд</i></div>
+    </div>
+
+    <a href="#rsvp" class="btn btn--ghost">Підтвердити присутність</a>
+  </div>
+  <a href="#intro" class="hero__scroll" aria-label="Гортати далі"><span></span></a>
+</section>
+
+<!-- INTRO / QUOTE -->
+<section class="intro" id="intro">
+  <div class="wrap reveal">
+    <p class="kicker">Запрошення</p>
+    <h2 class="intro__quote">«Тільки пізнавши кохання,<br/>пізнаєш життя»</h2>
+    <p class="intro__lead">
+      Дорогі рідні та друзі! Ми, <b>Максим</b> та <b>Єлизавета</b>, з трепетом і радістю
+      запрошуємо вас розділити з нами найважливіший день нашого життя.
+      Будемо щасливі бачити вас поруч у момент, коли скажемо одне одному «так».
+    </p>
+    <div class="intro__sign">з любов’ю, Максим &amp; Єлизавета</div>
+  </div>
+</section>
+
+<!-- DETAILS QUICK CARDS -->
+<section class="facts">
+  <div class="wrap facts__grid">
+    <article class="fact reveal">
+      <span class="fact__ico" aria-hidden="true">❦</span>
+      <p class="fact__label">Дата</p>
+      <p class="fact__big">6 вересня</p>
+      <p class="fact__small">неділя · 2026</p>
+    </article>
+    <article class="fact reveal">
+      <span class="fact__ico" aria-hidden="true">⌛</span>
+      <p class="fact__label">Початок</p>
+      <p class="fact__big">10<sup>:30</sup></p>
+      <p class="fact__small">збір гостей зранку</p>
+    </article>
+    <article class="fact reveal">
+      <span class="fact__ico" aria-hidden="true">✦</span>
+      <p class="fact__label">Локація</p>
+      <p class="fact__big">«Губернія»</p>
+      <p class="fact__small">ресторанний комплекс</p>
+    </article>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story" id="story">
+  <div class="wrap story__grid">
+    <div class="story__imgs">
+      <img class="reveal" src="assets/img/couple-door.jpg" alt="Максим та Єлизавета" loading="lazy" />
+      <img class="reveal story__img2" src="assets/img/couple-field.jpg" alt="Наречені" loading="lazy" />
+    </div>
+    <div class="story__text reveal">
+      <p class="kicker">Наша історія</p>
+      <h2 class="h2">Дві історії,<br/>що стали однією</h2>
+      <p>
+        Усе почалося з випадкової зустрічі та погляду, який неможливо забути.
+        Згодом були довгі розмови до ранку, спільні подорожі, перші «назавжди»
+        і впевненість, що ми знайшли одне одного.
+      </p>
+      <p>
+        Сьогодні ми пишемо найкращий розділ — і хочемо, щоб ви були його частиною.
+        Цей день ми задумали світлим і теплим: багато квітів, ніжні тканини,
+        живе світло свічок і яскраві акценти, які запам’ятаються назавжди.
+      </p>
+      <div class="story__palette" aria-hidden="true">
+        <span style="--c:#6D130B"></span>
+        <span style="--c:#F8D9BA"></span>
+        <span style="--c:#604532"></span>
+        <span style="--c:#FCF4D0"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="location" id="location">
+  <div class="location__photo" style="background-image:url('assets/img/venue.jpg')" aria-hidden="true"></div>
+  <div class="location__card reveal">
+    <p class="kicker">Локація</p>
+    <h2 class="h2">Ресторан<br/>«Губернія»</h2>
+    <p>
+      Затишний ресторанний комплекс, оточений зеленню — ідеальне місце для
+      виїзної церемонії просто неба та святкового вечора. Тут на нас чекає
+      велика зала, простора зона для церемонії та куточки для найкращих фото.
+    </p>
+    <ul class="location__meta">
+      <li><b>Церемонія</b> — на відкритому повітрі</li>
+      <li><b>Банкет</b> — у головній залі</li>
+      <li><b>Паркінг</b> — на території комплексу</li>
+    </ul>
+    <div class="location__actions">
+      <a href="#" id="mapBtn" class="btn btn--solid" target="_blank" rel="noopener">Прокласти маршрут</a>
+      <a href="#" id="calBtn" class="btn btn--outline">Додати в календар</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAM / TIMELINE -->
+<section class="program" id="program">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="kicker">Програма дня</p>
+      <h2 class="h2">Як минатиме<br/>наше свято</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl reveal">
+        <div class="tl__time">10:30</div>
+        <div class="tl__dot" aria-hidden="true"></div>
+        <div class="tl__body">
+          <h3>Вінчання</h3>
+          <p>Найважливіше таїнство дня — благословення нашого союзу.</p>
+        </div>
+      </div>
+      <div class="tl reveal">
+        <div class="tl__time">12:00</div>
+        <div class="tl__dot" aria-hidden="true"></div>
+        <div class="tl__body">
+          <h3>Фотосесія зі свідками</h3>
+          <p>Перші кадри дня у колі найближчих.</p>
+        </div>
+      </div>
+      <div class="tl reveal">
+        <div class="tl__time">12:30</div>
+        <div class="tl__dot" aria-hidden="true"></div>
+        <div class="tl__body">
+          <h3>Welcome-зона &amp; церемонія</h3>
+          <p>Подзвоніть у дзвіночок — і отримаєте келих ігристого або еспресо-мартіні.
+             А далі — виїзна церемонія серед квітів і свічок.</p>
+        </div>
+      </div>
+      <div class="tl reveal">
+        <div class="tl__time">14:00</div>
+        <div class="tl__dot" aria-hidden="true"></div>
+        <div class="tl__body">
+          <h3>Святковий банкет</h3>
+          <p>Сідаємо за стіл: смачні страви, теплі слова та перші танці.</p>
+        </div>
+      </div>
+      <div class="tl reveal">
+        <div class="tl__time">20:30</div>
+        <div class="tl__dot" aria-hidden="true"></div>
+        <div class="tl__body">
+          <h3>Торт &amp; кіно під зорями</h3>
+          <p>Розрізаємо весільний торт під милі відео на великому екрані.</p>
+        </div>
+      </div>
+      <div class="tl reveal">
+        <div class="tl__time">22:30</div>
+        <div class="tl__dot" aria-hidden="true"></div>
+        <div class="tl__body">
+          <h3>Перший танець &amp; феєрверк</h3>
+          <p>Важкий дим, лазер та холодні фонтани — і незабутній фінал вечора.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DRESS CODE -->
+<section class="dress" id="dresscode">
+  <div class="wrap">
+    <div class="sec-head sec-head--center reveal">
+      <p class="kicker">Дрес-код</p>
+      <h2 class="h2">Легкість із яскравими акцентами</h2>
+      <p class="dress__lead">
+        Ми будемо вдячні, якщо ваш образ підтримає палітру нашого свята.
+        Оберіть один із відтінків як акцент — і ви ідеально впишетесь у кадр.
+        Прохання <b>не обирати білий</b> (залишимо його нареченій) та светри/джинси.
+      </p>
+    </div>
+
+    <div class="swatches reveal" id="swatches">
+      <button class="sw" style="--c:#6D130B" data-name="Бургунді" data-hex="#6D130B">
+        <span class="sw__chip"></span><b>Бургунді</b><i>#6D130B</i>
+      </button>
+      <button class="sw" style="--c:#FCF4D0" data-name="Масляний" data-hex="#FCF4D0">
+        <span class="sw__chip"></span><b>Масляний</b><i>#FCF4D0</i>
+      </button>
+      <button class="sw" style="--c:#604532" data-name="Шоко" data-hex="#604532">
+        <span class="sw__chip"></span><b>Шоко</b><i>#604532</i>
+      </button>
+      <button class="sw" style="--c:#F8D9BA" data-name="Беж" data-hex="#F8D9BA">
+        <span class="sw__chip"></span><b>Беж</b><i>#F8D9BA</i>
+      </button>
+    </div>
+    <p class="sw-hint" id="swHint">Натисніть на колір, щоб скопіювати його код</p>
+
+    <div class="dress__cards">
+      <article class="dress__card reveal">
+        <img src="assets/img/detail-red.jpg" alt="Бордові акценти" loading="lazy" />
+        <div>
+          <h3>Для неї</h3>
+          <p>Сукня в підлогу або міді у відтінках бургунді, шоко чи беж.
+             Ніжні тканини, природні зачіски, акцент — у деталях.</p>
+        </div>
+      </article>
+      <article class="dress__card reveal">
+        <img src="assets/img/table-candelabra.jpg" alt="Елегантні деталі" loading="lazy" />
+        <div>
+          <h3>Для нього</h3>
+          <p>Костюм у бежевих, коричневих або глибоких бордових тонах.
+             Краватка чи метелик в тон палітри — гарне доповнення.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="sec-head sec-head--center reveal">
+      <p class="kicker">Натхнення</p>
+      <h2 class="h2">Атмосфера вечора</h2>
+      <p class="dress__lead">Таким ми бачимо наш день — ніжним, квітковим і теплим.</p>
+    </div>
+  </div>
+  <div class="masonry" id="masonry">
+    <!-- images injected by JS -->
+  </div>
+</section>
+
+<!-- HIGHLIGHTS / FUN -->
+<section class="highlights" id="highlights">
+  <div class="wrap">
+    <div class="sec-head sec-head--center reveal">
+      <p class="kicker">Фішки вечора</p>
+      <h2 class="h2">Що на вас чекає</h2>
+    </div>
+    <div class="hl__grid">
+      <article class="hl reveal"><span>🥂</span><h3>Welcome-ритуал</h3><p>Дзвіночок, ігристе та еспресо-мартіні з рук «зсередини» стелажа.</p></article>
+      <article class="hl reveal"><span>🎬</span><h3>Кіно під зорями</h3><p>Милі відео на великому екрані під час розрізання торта.</p></article>
+      <article class="hl reveal"><span>💃</span><h3>Танець у диму</h3><p>Перший танець з важким димом, лазером та ефектом «Попелюшки».</p></article>
+      <article class="hl reveal"><span>🎆</span><h3>Холодні фонтани</h3><p>Бенгальські вогні та феєрверк як ефектний фінал вечора.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- RSVP -->
+<section class="rsvp" id="rsvp">
+  <div class="wrap rsvp__inner reveal">
+    <div class="sec-head sec-head--center">
+      <p class="kicker">R.S.V.P.</p>
+      <h2 class="h2">Підтвердіть присутність</h2>
+      <p class="dress__lead">Будь ласка, дайте відповідь <b>до 1 серпня 2026</b>, щоб ми все врахували.</p>
+    </div>
+
+    <form class="form" id="rsvpForm" novalidate>
+      <div class="field">
+        <label for="name">Ваше ім’я та прізвище</label>
+        <input id="name" name="name" type="text" autocomplete="name" required placeholder="Олександра Коваленко" />
+      </div>
+
+      <div class="field">
+        <span class="field__label">Чи будете ви з нами?</span>
+        <div class="choices" role="radiogroup" aria-label="Присутність">
+          <label class="choice"><input type="radio" name="attend" value="Буду" required /><span>Так, обов’язково буду 💛</span></label>
+          <label class="choice"><input type="radio" name="attend" value="Не зможу" /><span>На жаль, не зможу</span></label>
+        </div>
+      </div>
+
+      <div class="grid2">
+        <div class="field">
+          <label for="guests">Кількість гостей</label>
+          <select id="guests" name="guests">
+            <option value="1">Я один / одна</option>
+            <option value="2">+1 (зі мною друга людина)</option>
+            <option value="3">Нас троє</option>
+            <option value="4">Нас четверо</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="menu">Побажання щодо меню</label>
+          <select id="menu" name="menu">
+            <option value="Без обмежень">Без обмежень</option>
+            <option value="Вегетаріанське">Вегетаріанське</option>
+            <option value="Без алкоголю">Без алкоголю</option>
+            <option value="Алергія (вкажу нижче)">Алергія (вкажу нижче)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="song">Пісня, під яку ви точно підете танцювати 🎵</label>
+        <input id="song" name="song" type="text" placeholder="Виконавець — назва" />
+      </div>
+
+      <div class="field">
+        <label for="note">Побажання нам або примітка</label>
+        <textarea id="note" name="note" rows="3" placeholder="Кілька теплих слів…"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn--solid btn--wide">Надіслати відповідь</button>
+      <p class="form__hint" id="formHint"></p>
+    </form>
+
+    <!-- success state -->
+    <div class="thanks" id="thanks" hidden>
+      <div class="thanks__heart">❤</div>
+      <h3>Дякуємо, <span id="thxName">друже</span>!</h3>
+      <p id="thxMsg">Вашу відповідь збережено. До зустрічі на святі!</p>
+      <div class="thanks__actions" id="thanksActions"></div>
+      <button class="link-btn" id="editRsvp">← змінити відповідь</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__mono">М <span>&amp;</span> Є</div>
+  <p class="footer__names">Максим &amp; Єлизавета</p>
+  <p class="footer__date">6 · 09 · 2026 · Ресторан «Губернія»</p>
+  <div class="footer__cd" id="footerCd">До зустрічі залишилось <b>—</b> днів</div>
+  <p class="footer__love">Зроблено з любов’ю ❤</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# build artifacts / local-only
+assets/_raw/
+server.py
+.claude/
+.DS_Store
+*.log
