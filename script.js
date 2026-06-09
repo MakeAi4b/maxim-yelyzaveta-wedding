@@ -343,7 +343,7 @@ let petalRAF = null;
 function initPetals() {
   const c = $('#petals'), x = c.getContext('2d');
   let W, H, list = [];
-  const colors = ['#6D130B', '#8a2417', '#F8D9BA', '#FCF4D0', '#b08a52'];
+  const colors = ['#3F2021', '#5A2E2F', '#E9D4C3', '#EFE1CE', '#b08a52'];
   const resize = () => { W = c.width = innerWidth; H = c.height = innerHeight; };
   resize(); window.addEventListener('resize', resize);
   const mk = () => ({
@@ -390,7 +390,7 @@ if (noAnim) petalToggle.style.display = 'none'; else applyPetals();
 function petalBurst() {
   const c = $('#petals'), x = c.getContext('2d');
   c.width = innerWidth; c.height = innerHeight;
-  const colors = ['#6D130B', '#8a2417', '#F8D9BA', '#FCF4D0', '#b08a52'];
+  const colors = ['#3F2021', '#5A2E2F', '#E9D4C3', '#EFE1CE', '#b08a52'];
   const cx = innerWidth / 2, cy = innerHeight * 0.4;
   let burst = Array.from({ length: 80 }, () => ({
     x: cx, y: cy, s: Math.random() * 9 + 5,

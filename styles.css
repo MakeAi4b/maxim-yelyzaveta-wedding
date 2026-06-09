@@ -1,13 +1,14 @@
 /* ============================================================
    Максим & Єлизавета — wedding invitation
-   Palette: Бургунді #6D130B · Масляний #FCF4D0 · Шоко #604532 · Беж #F8D9BA
+   Palette (Pantone): Бургунді 4975 C #3F2021 · Buttercream 11-0110 #EFE1CE
+                      · Mother of Pearl 12-1006 #E9D4C3 · Black Beauty 19-3911 #27272A
    ============================================================ */
 :root{
-  --burgundy:#6D130B;
-  --burgundy-2:#8a2417;
-  --cream:#FCF4D0;
-  --choco:#604532;
-  --beige:#F8D9BA;
+  --burgundy:#3F2021;
+  --burgundy-2:#5A2E2F;
+  --cream:#EFE1CE;
+  --choco:#27272A;
+  --beige:#E9D4C3;
   --bg:#FBF6EE;
   --bg-2:#F4EADD;
   --ink:#3a2a20;
@@ -247,7 +248,7 @@ a{color:inherit;text-decoration:none}
 .field input,.field select,.field textarea{font-family:var(--serif);font-size:18px;color:var(--ink);
   padding:14px 16px;border:1px solid var(--line);border-radius:11px;background:var(--bg);transition:border .25s,box-shadow .25s}
 .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--burgundy);
-  box-shadow:0 0 0 3px rgba(109,19,11,.1)}
+  box-shadow:0 0 0 3px rgba(63,32,33,.14)}
 .field textarea{resize:vertical}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .choices{display:flex;gap:14px;flex-wrap:wrap}
@@ -257,7 +258,7 @@ a{color:inherit;text-decoration:none}
   background:var(--bg);transition:.25s;font-size:17px}
 .choice input:checked+span{border-color:var(--burgundy);background:var(--burgundy);color:#fff;box-shadow:0 10px 24px -14px var(--burgundy)}
 .form__hint{text-align:center;color:var(--burgundy);font-size:15px;margin:14px 0 0;min-height:20px}
-.invalid{border-color:var(--burgundy)!important;box-shadow:0 0 0 3px rgba(109,19,11,.12)!important}
+.invalid{border-color:var(--burgundy)!important;box-shadow:0 0 0 3px rgba(63,32,33,.16)!important}
 
 .thanks{background:#fff;border:1px solid var(--line);border-radius:22px;padding:clamp(36px,6vw,60px);
   text-align:center;box-shadow:var(--shadow)}
