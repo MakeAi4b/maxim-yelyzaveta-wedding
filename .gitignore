@@ -4,3 +4,4 @@ server.py
 .claude/
 .DS_Store
 *.log
+.vercel
